@@ -6,7 +6,10 @@ import Transaction from "./Pages/Transaction/Transaction";
 import Member from "./Pages/Member/Member";
 import Profile from "./Pages/Member/Profile";
 import MemberList from "./Pages/Member/MemberList";
-import Test from "./Pages/Member/Test";
+import Master from "./Pages/Master/Master";
+import Ledger from "./Pages/Master/Ledger";
+import NewLedger from "./Pages/Master/NewLedger";
+import Group from "./Pages/Master/Group";
 
 const router = createBrowserRouter([
   {
@@ -33,9 +36,22 @@ const router = createBrowserRouter([
         path: "/member/member-list",
         element: <MemberList />,
       },
+
       {
-        path: "/member/transactions",
-        element: <Test />,
+        path: "/master",
+        element: <Master />,
+      },
+      {
+        path: "/master/ledger",
+        element: <Ledger />,
+      },
+      {
+        path: "master/ledger/newledger",
+        element: <NewLedger />,
+      },
+      {
+        path: "master/groups",
+        element: <Group />,
       },
     ],
   },
