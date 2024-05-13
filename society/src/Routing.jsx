@@ -10,6 +10,10 @@ import Master from "./Pages/Master/Master";
 import Ledger from "./Pages/Master/Ledger";
 import NewLedger from "./Pages/Master/NewLedger";
 import Group from "./Pages/Master/Group";
+import Bills from "./Pages/Societies/Bills";
+import Payment from "./Pages/Transaction/Payment";
+import Receipt from "./Pages/Transaction/Receipt";
+import Purchase from "./Pages/Transaction/Purchase";
 
 const router = createBrowserRouter([
   {
@@ -52,6 +56,22 @@ const router = createBrowserRouter([
       {
         path: "master/groups",
         element: <Group />,
+      },
+      {
+        path: "society/bills",
+        element: <Bills />,
+      },
+      {
+        path: "transaction/payment",
+        element: <Payment />,
+      },
+      {
+        path: "transaction/receipt",
+        element: <Receipt />,
+      },
+      {
+        path: "transaction/purchase",
+        element: <Purchase />,
       },
     ],
   },
